@@ -7,3 +7,4 @@ abc048/target/*
 abc048/target/debug/.fingerprint
 target/.rustc_info.json
 target/
+*/testcases/
