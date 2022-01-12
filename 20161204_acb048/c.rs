@@ -1,4 +1,4 @@
-use proconio::input;
+﻿use proconio::input;
 
 fn solve() {
     input! {
