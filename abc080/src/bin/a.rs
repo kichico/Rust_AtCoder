@@ -7,12 +7,15 @@ use std::cmp::{max, min};
 #[allow(unused_imports)]
 use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 
+#[allow(non_snake_case)]
+#[fastout]
 fn solve() {
     input! {
-        n: i64,
+        t: usize,
+        a:usize,
+        b:usize,
     }
-    let ans: &str = if n % 2 == 0 { "White" } else { "Black" };
-    println!("{}",ans);
+    println!("{}", min(t * a, b));
 }
 
 fn main() {

@@ -31,9 +31,11 @@ use std::cmp::{max, min};
 #[allow(unused_imports)]
 use itertools::Itertools;
 
+#[allow(non_snake_case)]
+#[fastout]
 fn solve(){
     input!{
-        n: i64,
+        n: usize,
     }
 }
 
