@@ -4,6 +4,7 @@ use itertools::Itertools;
 use proconio::{fastout, input, marker::Chars};
 #[allow(unused_imports)]
 use std::cmp::{max, min};
+use std::collections::BTreeMap;
 #[allow(unused_imports)]
 use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 
@@ -11,18 +12,19 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 #[fastout]
 fn solve() {
     input! {
-        s:String,
         n: usize,
+        a: [i64;n],
     }
-    let vc: Vec<char> = s.chars().collect();
-    let mut st: Vec<String> = Vec::new();
-    for x in 0..5 {
-        for y in 0..5 {
-            st.push([vc[x].to_string(), vc[y].to_string()].concat());
+    let mut ans = 0;
+    for left in 0..n {
+        let mut minv = a[left];
+        for right in left..n {
+            minv = min(minv, a[right]);
+            ans = max(ans, (right - left + 1) as i64 * minv);
         }
+        dbg!(&ans);
     }
-    st.sort();
-    println!("{}", st[n - 1]);
+    println!("{}", ans);
 }
 
 fn main() {

@@ -1,23 +1,26 @@
 #[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
-use proconio::{fastout, input, marker::Chars, marker::Usize1};
+use proconio::{fastout, input, marker::Chars};
 #[allow(unused_imports)]
 use std::cmp::{max, min};
 #[allow(unused_imports)]
 use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
+
 #[allow(non_snake_case)]
 #[fastout]
-
 fn solve() {
     input! {
-        N: i64,
-        a: i64,
-        b: i64,
+        n: usize,
+        a: [i64;n],
     }
-    let bb = if N <= 5 { N * b } else { 5 * b };
-    let aa = max(N - 5, 0);
-    println!("{}", bb + aa * a);
+    let mut p = 0;
+    let mut r = a[0];
+    while p < n - 1 && r < a[p + 1] {
+        p += 1;
+        r = a[p];
+    }
+    println!("{}", a[p]);
 }
 
 fn main() {

@@ -1,36 +1,41 @@
 #[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
+use petgraph::unionfind::UnionFind;
+#[allow(unused_imports)]
 use proconio::{fastout, input, marker::Chars};
 #[allow(unused_imports)]
 use std::cmp::{max, min};
 #[allow(unused_imports)]
 use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
-
-use petgraph::unionfind::UnionFind;
 #[allow(non_snake_case)]
 #[fastout]
 fn solve() {
     input! {
-        n: usize,
-        m: usize,
-        mut edges: [(i64,i64,i64);m],
+        n: i64,
+        k: usize,
+        D: [char;k],
     }
-    let mut uf: UnionFind<usize> = UnionFind::new(n);
-    let mut ans: i64 = 0;
-    edges.sort_by_key(|k| k.2);
-    for (mut x, mut y, cost) in edges {
-        x -= 1;
-        y -= 1;
-        if uf.find(x as usize) != uf.find(y as usize) {
-            uf.union(x as usize, y as usize);
-        } else if cost <= 0 {
-            uf.union(x as usize, y as usize);
-        } else {
-            ans += cost;
+    let mut st: BTreeSet<char> = BTreeSet::new();
+    for x in D {
+        st.insert(x);
+    }
+    let mut ans: BTreeSet<i64> = BTreeSet::new();
+    for i in n..100000 {
+        let s = i.to_string();
+        let cc: Vec<char> = s.as_str().chars().collect();
+        let mut flg: bool = true;
+        for x in cc {
+            if st.contains(&x) == true {
+                flg = false;
+                break;
+            }
+        }
+        if flg {
+            ans.insert(i);
         }
     }
-    println!("{}", ans);
+    println!("{}", ans.iter().next().unwrap());
 }
 
 fn main() {

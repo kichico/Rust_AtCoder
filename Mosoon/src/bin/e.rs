@@ -11,11 +11,14 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 #[fastout]
 fn solve() {
     input! {
-        a: usize,
-        b:usize,
+        s: String,
     }
-    for x in (a + 1)..b {
-        println!("{}", x);
+    let v = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+    for i in 0..7 {
+        if s == v[i].to_string() {
+            println!("{}", 7 - i);
+            return;
+        }
     }
 }
 

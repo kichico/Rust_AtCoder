@@ -10,16 +10,16 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        a: u64,
-        b: u64,
+        vv: String,
     }
-    let mut ans = 0;
-    for i in 1..=a {
-        for j in 1..=b {
-            ans += 100 * i + j;
+    let v: Vec<char> = vv.as_str().chars().collect();
+    let mut cnt = 0;
+    for x in v {
+        if x == 'o' {
+            cnt += 1;
         }
     }
-    println!("{}", ans);
+    println!("{}", 700 + cnt * 100);
 }
 
 fn main() {
