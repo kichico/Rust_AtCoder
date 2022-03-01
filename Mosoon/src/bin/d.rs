@@ -12,30 +12,22 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 #[fastout]
 fn solve() {
     input! {
-        n: i64,
-        k: usize,
-        D: [char;k],
+        n:usize,
+        a:[String;n],
     }
-    let mut st: BTreeSet<char> = BTreeSet::new();
-    for x in D {
-        st.insert(x);
+    let mut st: HashMap<String, i32> = HashMap::new();
+    for s in a {
+        let it = st.entry(s).or_insert(0);
+        *it += 1;
     }
-    let mut ans: BTreeSet<i64> = BTreeSet::new();
-    for i in n..100000 {
-        let s = i.to_string();
-        let cc: Vec<char> = s.as_str().chars().collect();
-        let mut flg: bool = true;
-        for x in cc {
-            if st.contains(&x) == true {
-                flg = false;
-                break;
-            }
-        }
-        if flg {
-            ans.insert(i);
+    let v = vec!["AC", "WA", "TLE", "RE"];
+    for k in v {
+        let res = st.get(&k.to_string());
+        match res {
+            Some(x) => println!("{} x {}", k, x),
+            None => println!("{} x {}", k, 0),
         }
     }
-    println!("{}", ans.iter().next().unwrap());
 }
 
 fn main() {

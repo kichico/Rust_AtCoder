@@ -16,18 +16,23 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 #[fastout]
 fn solve() {
     input! {
-        n: usize,
-        a:[i64;n],
+        s: String,
     }
-    let mut cnt = 0;
-    for i in 0..n {
-        let mut v = a[i].clone();
-        while v % 2 == 0 {
-            cnt += 1;
-            v /= 2;
+    let mut ans: Vec<char> = Vec::new();
+    let v: Vec<char> = s.as_str().chars().collect();
+    let mut a: Vec<String> = Vec::new();
+    for c in v {
+        if c != ',' {
+            ans.push(c);
+        } else {
+            let ss: String = ans.iter().collect();
+            a.push(ss);
+            ans.clear();
         }
     }
-    println!("{}", cnt);
+    let ss: String = ans.iter().collect();
+    a.push(ss);
+    println!("{} {} {}", &a[0], &a[1], &a[2]);
 }
 
 fn main() {

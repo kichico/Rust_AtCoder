@@ -16,15 +16,13 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 #[fastout]
 fn solve() {
     input! {
-        d: i64,
-        n: i64,
+        sx: i64,
+        sy: i64,
+        gx: i64,
+        gy: i64,
     }
-    let ans = if n != 100 {
-        100i64.pow(d as u32) * n
-    } else {
-        100i64.pow(d as u32) * 101
-    };
-    println!("{}", ans);
+    let mut dirx: HashMap<i64, char> = HashMap::new();
+    let mut diry: HashMap<i64, char> = HashMap::new();
 }
 
 fn main() {

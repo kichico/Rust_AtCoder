@@ -16,15 +16,24 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 #[fastout]
 fn solve() {
     input! {
-        d: i64,
-        n: i64,
+        M: i64,
+        D: i64,
     }
-    let ans = if n != 100 {
-        100i64.pow(d as u32) * n
-    } else {
-        100i64.pow(d as u32) * 101
-    };
-    println!("{}", ans);
+    let mut cnt = 0;
+    for m in 1..=M {
+        for i in 2..10 {
+            for j in 2..10 {
+                let date = i * 10 + j;
+                if date > D {
+                    continue;
+                }
+                if i * j == m {
+                    cnt += 1;
+                }
+            }
+        }
+    }
+    println!("{}", cnt);
 }
 
 fn main() {

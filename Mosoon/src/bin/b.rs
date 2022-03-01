@@ -11,13 +11,12 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 
 fn solve() {
     input! {
-        N: i64,
         a: i64,
+        op: char,
         b: i64,
     }
-    let bb = if N <= 5 { N * b } else { 5 * b };
-    let aa = max(N - 5, 0);
-    println!("{}", bb + aa * a);
+    let res = if op == '+' { a + b } else { a - b };
+    println!("{}", res);
 }
 
 fn main() {
