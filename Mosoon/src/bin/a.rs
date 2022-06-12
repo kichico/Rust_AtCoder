@@ -1,25 +1,31 @@
 #[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
-use proconio::{fastout, input, marker::Chars};
+use num::*;
 #[allow(unused_imports)]
-use std::cmp::{max, min};
+use num_integer::Roots;
 #[allow(unused_imports)]
-use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
-
+use petgraph::unionfind;
+#[allow(unused_imports)]
+use proconio::{
+    fastout, input,
+    marker::{Chars, Usize1},
+};
+#[allow(unused_imports)]
+use std::cmp::*;
+#[allow(unused_imports)]
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
 #[allow(non_snake_case)]
+#[fastout]
 fn solve() {
-    input! {
-        vv: String,
-    }
-    let v: Vec<char> = vv.as_str().chars().collect();
-    let mut cnt = 0;
-    for x in v {
-        if x == 'o' {
-            cnt += 1;
+    input!{n:i64,a:[i64;n]}
+    for x in a{
+        if(x%2==0&&(x%3!=0&&x%5!=0)){
+            println!("DENIED");
+            return;
         }
     }
-    println!("{}", 700 + cnt * 100);
+    println!("APPROVED");
 }
 
 fn main() {

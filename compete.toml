@@ -23,20 +23,26 @@ test-suite = "{{ manifest_dir }}/testcases/{{ bin_alias }}.yml"
 [template]
 src = '''
 #[allow(unused_imports)]
-use proconio::{input, fastout, marker::{Chars,Usize1}};
-#[allow(unused_imports)]
-use std::collections::{HashSet, HashMap, BTreeSet, VecDeque};
-#[allow(unused_imports)]
-use std::cmp::{max, min};
-#[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
-use petgraph::unionfind;
-
+use num::*;
+#[allow(unused_imports)]
+use num_integer::Roots;
+#[allow(unused_imports)]
+use petgraph::*;
+#[allow(unused_imports)]
+use proconio::{
+    fastout, input,
+    marker::{Chars, Usize1},
+};
+#[allow(unused_imports)]
+use std::cmp::*;
+#[allow(unused_imports)]
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
 #[allow(non_snake_case)]
 #[fastout]
-fn solve(){
-    input!{
+fn solve() {
+    input! {
         n: usize,
     }
 }
@@ -44,6 +50,7 @@ fn solve(){
 fn main() {
     solve();
 }
+
 '''
 
 [template.new]

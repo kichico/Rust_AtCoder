@@ -1,0 +1,230 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc106-a'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc106-a",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc106-a'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc106-a",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc106-b'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc106-b",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc106-b'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc106-b",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc106-c'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc106-c",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc106-c'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc106-c",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc106-d'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc106-d",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc106-d'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc106-d",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc106-e'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc106-e",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc106-e'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc106-e",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc106-f'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc106-f",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc106-f'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc106-f",
+                    "--package=arc106"
+                ],
+                "filter": {
+                    "name": "arc106-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
