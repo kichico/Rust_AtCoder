@@ -1,4 +1,3 @@
-use alga::general::Field;
 #[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
@@ -6,8 +5,7 @@ use num::*;
 #[allow(unused_imports)]
 use num_integer::Roots;
 #[allow(unused_imports)]
-use petgraph::unionfind;
-use petgraph::unionfind::UnionFind;
+use petgraph::*;
 #[allow(unused_imports)]
 use proconio::{
     fastout, input,
@@ -21,8 +19,24 @@ use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
 #[fastout]
 fn solve() {
     input! {
-       na:[i64;]
+        n: usize,a:[i64;n]
     }
+    let mut base = vec![0; 4];
+    let mut p = 0;
+    for i in 0..n {
+        base[0] += 1;
+        let m = a[i];
+        for j in (0..4).rev() {
+            if j + m as usize >= 4 {
+                p += base[j];
+                base[j] = 0;
+            } else {
+                base[j + m as usize] = base[j];
+                base[j] = 0;
+            }
+        }
+    }
+    println!("{}", p);
 }
 
 fn main() {

@@ -7,15 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'Mosoon-a'",
+            "name": "Debug executable 'abc257-a'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=Mosoon-a",
-                    "--package=Mosoon"
+                    "--bin=abc257-a",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-a",
+                    "name": "abc257-a",
                     "kind": "bin"
                 }
             },
@@ -25,16 +25,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'Mosoon-a'",
+            "name": "Debug unit tests in executable 'abc257-a'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=Mosoon-a",
-                    "--package=Mosoon"
+                    "--bin=abc257-a",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-a",
+                    "name": "abc257-a",
                     "kind": "bin"
                 }
             },
@@ -44,15 +44,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'Mosoon-b'",
+            "name": "Debug executable 'abc257-b'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=Mosoon-b",
-                    "--package=Mosoon"
+                    "--bin=abc257-b",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-b",
+                    "name": "abc257-b",
                     "kind": "bin"
                 }
             },
@@ -62,16 +62,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'Mosoon-b'",
+            "name": "Debug unit tests in executable 'abc257-b'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=Mosoon-b",
-                    "--package=Mosoon"
+                    "--bin=abc257-b",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-b",
+                    "name": "abc257-b",
                     "kind": "bin"
                 }
             },
@@ -81,15 +81,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'Mosoon-c'",
+            "name": "Debug executable 'abc257-c'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=Mosoon-c",
-                    "--package=Mosoon"
+                    "--bin=abc257-c",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-c",
+                    "name": "abc257-c",
                     "kind": "bin"
                 }
             },
@@ -99,16 +99,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'Mosoon-c'",
+            "name": "Debug unit tests in executable 'abc257-c'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=Mosoon-c",
-                    "--package=Mosoon"
+                    "--bin=abc257-c",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-c",
+                    "name": "abc257-c",
                     "kind": "bin"
                 }
             },
@@ -118,15 +118,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'Mosoon-d'",
+            "name": "Debug executable 'abc257-d'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=Mosoon-d",
-                    "--package=Mosoon"
+                    "--bin=abc257-d",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-d",
+                    "name": "abc257-d",
                     "kind": "bin"
                 }
             },
@@ -136,16 +136,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'Mosoon-d'",
+            "name": "Debug unit tests in executable 'abc257-d'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=Mosoon-d",
-                    "--package=Mosoon"
+                    "--bin=abc257-d",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-d",
+                    "name": "abc257-d",
                     "kind": "bin"
                 }
             },
@@ -155,15 +155,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'Mosoon-e'",
+            "name": "Debug executable 'abc257-e'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=Mosoon-e",
-                    "--package=Mosoon"
+                    "--bin=abc257-e",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-e",
+                    "name": "abc257-e",
                     "kind": "bin"
                 }
             },
@@ -173,16 +173,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'Mosoon-e'",
+            "name": "Debug unit tests in executable 'abc257-e'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=Mosoon-e",
-                    "--package=Mosoon"
+                    "--bin=abc257-e",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-e",
+                    "name": "abc257-e",
                     "kind": "bin"
                 }
             },
@@ -192,15 +192,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'Mosoon-f'",
+            "name": "Debug executable 'abc257-f'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=Mosoon-f",
-                    "--package=Mosoon"
+                    "--bin=abc257-f",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-f",
+                    "name": "abc257-f",
                     "kind": "bin"
                 }
             },
@@ -210,16 +210,53 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'Mosoon-f'",
+            "name": "Debug unit tests in executable 'abc257-f'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=Mosoon-f",
-                    "--package=Mosoon"
+                    "--bin=abc257-f",
+                    "--package=abc257"
                 ],
                 "filter": {
-                    "name": "Mosoon-f",
+                    "name": "abc257-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc257-g'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc257-g",
+                    "--package=abc257"
+                ],
+                "filter": {
+                    "name": "abc257-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc257-g'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc257-g",
+                    "--package=abc257"
+                ],
+                "filter": {
+                    "name": "abc257-g",
                     "kind": "bin"
                 }
             },

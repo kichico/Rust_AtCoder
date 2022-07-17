@@ -1,52 +1,34 @@
 #[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
-use num::integer::{gcd, lcm};
+use num::*;
 #[allow(unused_imports)]
-use num_traits::abs;
+use num_integer::Roots;
 #[allow(unused_imports)]
-use proconio::{fastout, input, marker::Chars};
+use petgraph::*;
 #[allow(unused_imports)]
-use std::cmp;
-#[allow(unused_imports)]
-use std::cmp::{max, min};
-#[allow(unused_imports)]
-use std::{
-    collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque},
-    mem::swap,
+use proconio::{
+    fastout, input,
+    marker::{Chars, Usize1},
 };
-
+#[allow(unused_imports)]
+use std::cmp::*;
+#[allow(unused_imports)]
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
 #[allow(non_snake_case)]
 #[fastout]
 fn solve() {
     input! {
-        n:usize,mut coupon:i64,x:i64,mut a:[i64;n]
+        n: usize,day:i64,rest:i64,p:[i64;n]
     }
-    a.sort_by(|x, y| x.cmp(y).reverse());
-    for idx in 0..n {
-        if a[idx] / x <= coupon {
-            coupon -= a[idx] / x;
-            a[idx] -= (a[idx] / x) * x;
-        } else {
-            a[idx] -= x * coupon;
-            coupon = 0;
-            break;
+    let mut ans = rest;
+    for i in 0..n {
+        ans += day / p[i];
+        if day % p[i] != 0 {
+            ans += 1;
         }
     }
-
-    a.sort_by(|x, y| x.cmp(y).reverse());
-    if coupon != 0 {
-        for i in 0..n {
-            a[i] = 0;
-            coupon -= 1;
-            if coupon == 0 {
-                break;
-            }
-        }
-    }
-
-    let sum: i64 = a.iter().sum();
-    println!("{}", sum);
+    println!("{}", ans);
 }
 
 fn main() {

@@ -12,12 +12,16 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 
 #[allow(non_snake_case)]
 fn solve() {
-    input! { n:usize,k:usize,mut h:[i64;n] }
-    h.sort();
-    for i in 0..k {
-        h.pop();
-    }
-    let ans: i64 = h.iter().sum();
+    input! {a:char,b:char}
+    let a: i32 = a as i32;
+    let b: i32 = b as i32;
+    let ans = if a > b {
+        ">"
+    } else if a < b {
+        "<"
+    } else {
+        "="
+    };
     println!("{}", ans);
 }
 

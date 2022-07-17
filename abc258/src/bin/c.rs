@@ -1,4 +1,3 @@
-use alga::general::Field;
 #[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
@@ -6,8 +5,7 @@ use num::*;
 #[allow(unused_imports)]
 use num_integer::Roots;
 #[allow(unused_imports)]
-use petgraph::unionfind;
-use petgraph::unionfind::UnionFind;
+use petgraph::*;
 #[allow(unused_imports)]
 use proconio::{
     fastout, input,
@@ -21,8 +19,13 @@ use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
 #[fastout]
 fn solve() {
     input! {
-       na:[i64;]
+        n: usize,day:i64,rest:i64,p:[i64;n]
     }
+    let mut ans = rest;
+    for i in 0..n {
+        ans += (day / p[i]) + 1;
+    }
+    println!("{}", ans);
 }
 
 fn main() {
