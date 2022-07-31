@@ -1,0 +1,230 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc144-a'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc144-a",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc144-a'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc144-a",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc144-b'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc144-b",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc144-b'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc144-b",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc144-c'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc144-c",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc144-c'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc144-c",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc144-d'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc144-d",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc144-d'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc144-d",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc144-e'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc144-e",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc144-e'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc144-e",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc144-f'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc144-f",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc144-f'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc144-f",
+                    "--package=arc144"
+                ],
+                "filter": {
+                    "name": "arc144-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

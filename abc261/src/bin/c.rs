@@ -17,26 +17,29 @@ use std::cmp::*;
 use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
 #[allow(unused_imports)]
 use std::mem::swap;
-
+#[allow(dead_code)]
+#[allow(non_snake_case)]
 fn to_char(x: i64) -> char {
     return std::char::from_digit(x as u32, 10).unwrap();
 }
+
 #[allow(non_snake_case)]
+#[fastout]
 fn solve() {
     input! {
-        mut n: i64,
+        n:usize,a:[String;n]
     }
-    let m = 2 * n;
-    let mut ans: Vec<char> = Vec::new();
-    for div in (1..5).rev() {
-        while n - div >= 0 {
-            n -= div;
-            ans.push(to_char(div));
+    let mut dict: HashMap<String, i64> = HashMap::new();
+    for s in &a {
+        if !dict.contains_key(s) {
+            println!("{}", s);
+            dict.insert(s.to_string(), 1);
+        } else {
+            let x = dict.get(s).unwrap();
+            println!("{}({})", s, x);
+            *dict.entry(s.to_string()).or_insert(1) += 1;
         }
     }
-    ans.reverse();
-    let ans: String = ans.iter().collect();
-    println!("{}\n{}", m, ans);
 }
 
 fn main() {

@@ -3,7 +3,7 @@ use itertools::Itertools;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
-use num_integer::Roots;
+use num_integer::*;
 #[allow(unused_imports)]
 use petgraph::*;
 #[allow(unused_imports)]
@@ -15,13 +15,20 @@ use proconio::{
 use std::cmp::*;
 #[allow(unused_imports)]
 use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::mem::swap;
+#[allow(dead_code)]
+#[allow(non_snake_case)]
+fn to_char(x: i64) -> char {
+    return std::char::from_digit(x as u32, 10).unwrap();
+}
+
 #[allow(non_snake_case)]
 #[fastout]
 fn solve() {
     input! {
-        n: usize,x:i64,y:i64,a:[i64;n]
+        n:usize
     }
-    let a: BTreeSet<i64> = a.iter().collect();
 }
 
 fn main() {
