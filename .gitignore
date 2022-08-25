@@ -9,3 +9,5 @@ target/.rustc_info.json
 target/
 */testcases/
 competitive-programming-rs/*
+*/Cargo.lock
+*/Cargo.toml

@@ -3,7 +3,7 @@ use itertools::Itertools;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
-use num_integer::Roots;
+use num_integer::*;
 #[allow(unused_imports)]
 use petgraph::*;
 #[allow(unused_imports)]
@@ -15,26 +15,28 @@ use proconio::{
 use std::cmp::*;
 #[allow(unused_imports)]
 use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::mem::swap;
+#[allow(dead_code)]
+#[allow(non_snake_case)]
+fn to_char(x: i64) -> char {
+    return std::char::from_digit(x as u32, 10).unwrap();
+}
+
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n: usize,mut a:[i64;n]
+        n:usize,a:[Usize1;n-1]
     }
-    a.sort();
-    let mut dict: BTreeMap<i64, i64> = BTreeMap::new();
-    for i in 0..n {
-        *dict.entry(a[i]).or_insert(0) += 1;
+    let mut cnt = 1;
+    let mut a: VecDeque<&usize> = a.iter().collect::<VecDeque<_>>();
+    let mut now = n - 1;
+    a.push_front(&n);
+    while *a[now] != 0 {
+        cnt += 1;
+        now = *a[now]
     }
-    let mut rest = dict.len() as i64;
-    let mut ans = 0;
-    for (x, num) in &dict {
-        if rest <= 2 {
-            continue;
-        }
-        ans += num * ((rest - 2) * (rest - 1)) / 2;
-        rest -= 1;
-    }
-    println!("{}", ans);
+    println!("{}", cnt);
 }
 
 fn main() {

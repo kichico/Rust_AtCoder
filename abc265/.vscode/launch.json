@@ -1,0 +1,267 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc265-a'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc265-a",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc265-a'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc265-a",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc265-b'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc265-b",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc265-b'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc265-b",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc265-c'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc265-c",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc265-c'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc265-c",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc265-d'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc265-d",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc265-d'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc265-d",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc265-e'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc265-e",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc265-e'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc265-e",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc265-f'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc265-f",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc265-f'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc265-f",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc265-g'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc265-g",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc265-g'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc265-g",
+                    "--package=abc265"
+                ],
+                "filter": {
+                    "name": "abc265-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

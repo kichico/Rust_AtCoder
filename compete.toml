@@ -48,7 +48,6 @@ fn to_char(x: i64) -> char {
 }
 
 #[allow(non_snake_case)]
-#[fastout]
 fn solve() {
     input! {
         n:usize
