@@ -11,7 +11,6 @@ use proconio::{
     fastout, input,
     marker::{Chars, Usize1},
 };
-use rand::*;
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
@@ -26,25 +25,20 @@ fn to_char(x: i64) -> char {
 
 #[allow(non_snake_case)]
 fn solve() {
-    let mut gen = rand::thread_rng();
-    for i in 0..30 {
-        let n = gen.gen_range(10, 20);
-        let mut a = vec![0; n];
-        for j in 0..n {
-            a[i] = gen.gen_range(10, 2000);
-        }
-        // naive
-        for j in 0..n - 2 {
-            for k in j..n - 1 {
-                for m in k..n {
-                    let (x, y, z) = (a[j], a[k], a[m]);
-                    let mut ans: BTreeSet<i64> = BTreeSet::new();
-                    let mut v = vec![x, y, z];
-                    v.sort();
-                }
-            }
-        }
+    input! {
+        n:usize,mut a:[i64;n]
     }
+    a.sort();
+    let mut cand = vec![a[n - 3], a[n - 2], a[n - 1]];
+    let mut ans: BTreeSet<i64> = BTreeSet::new();
+    for v in cand.iter().permutations(3) {
+        let mut str = "".to_string();
+        for i in 0..3 {
+            str += &v[i].to_string();
+        }
+        ans.insert(str.parse().unwrap());
+    }
+    println!("{}", ans.iter().next_back().unwrap());
 }
 
 fn main() {
