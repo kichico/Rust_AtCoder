@@ -12,17 +12,11 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 
 #[allow(non_snake_case)]
 fn solve() {
-    input! {a:char,b:char}
-    let a: i32 = a as i32;
-    let b: i32 = b as i32;
-    let ans = if a > b {
-        ">"
-    } else if a < b {
-        "<"
-    } else {
-        "="
-    };
-    println!("{}", ans);
+    input! {mut n:i64}
+    while n > 1000 {
+        n -= 1000;
+    }
+    println!("{}", 1000 - n);
 }
 
 fn main() {

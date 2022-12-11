@@ -3,6 +3,7 @@ use alga::general::Field;
 use itertools::Itertools;
 #[allow(unused_imports)]
 use num::*;
+use num_integer::sqrt;
 #[allow(unused_imports)]
 use num_integer::Roots;
 #[allow(unused_imports)]
@@ -19,49 +20,20 @@ use std::cmp::*;
 use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
 #[allow(non_snake_case)]
 
+fn dist(x: (i64, i64), y: (i64, i64)) -> f64 {
+    return 
+}
 fn solve() {
     input! {
-       n:usize,a:[i64;n],mut b:[i64;n]
+       n:usize,p:[(i64,i64);n]
     }
-    b.sort();
-    let b = b;
-    let mut eachxor: Vec<BTreeSet<i64>> = vec![BTreeSet::new(); n];
+    let mut ans = 0.0;
     for i in 0..n {
-        for y in &b {
-            let x = a[i];
-            eachxor[i].insert(x ^ *y);
+        for j in 0..n {
+            ans = ans.max(dist(p[i], p[j]));
         }
     }
-    let mut cnt = vec![0; n];
-    for i in 0..n {
-        cnt[i] = a[0] ^ b[i];
-    }
-    let mut ans: BTreeSet<i64> = BTreeSet::new();
-    for x in &cnt {
-        let mut c = vec![0; n];
-        for i in 0..n {
-            c[i] = a[i] ^ *x;
-        }
-        c.sort();
-        let mut flg = true;
-        for i in 0..n {
-            if b[i] != c[i] {
-                flg = false;
-                break;
-            }
-        }
-        if flg {
-            ans.insert(*x);
-        }
-    }
-    if ans.is_empty() {
-        println!("0");
-    } else {
-        println!("{}", ans.len());
-        for x in &ans {
-            println!("{}", x);
-        }
-    }
+    println!("{}", ans);
 }
 
 fn main() {

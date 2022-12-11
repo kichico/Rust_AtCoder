@@ -21,7 +21,6 @@ fn solve() {
     input! {
         n: usize,x:i64,y:i64,a:[i64;n]
     }
-    let a: BTreeSet<i64> = a.iter().collect();
 }
 
 fn main() {

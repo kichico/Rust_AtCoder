@@ -1,5 +1,5 @@
 #[allow(unused_imports)]
-use itertools::join;
+use itertools::Itertools;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
@@ -22,33 +22,31 @@ use std::mem::swap;
 fn to_char(x: i64) -> char {
     return std::char::from_digit(x as u32, 10).unwrap();
 }
-
 #[allow(non_snake_case)]
 fn solve() {
     input! {
         n:usize,m:usize,a:[i64;n]
     }
-    let mut dp = vec![vec![(-1e18) as i64; m]; n + 1];
-    for i in 0..n {
-        dp[i][0] = a[i];
-    }
-    for j in 0..m - 1 {
-        for i in j..n {
-            for k in i + 1..n {
-                let prev = dp[i][j];
-                if prev + a[k] * (j + 2) as i64 > dp[k][j + 1] {
-                    dp[k][j + 1] = prev + a[k] * (j + 2) as i64;
-                }
+    let mut dp = vec![vec![-1e18 as i64; m]; n];
+    dp[0][0] = a[0];
+    for i in 1..n {
+        for j in 0..m {
+            if j == 0 {
+                dp[i][j] = a[i];
+            } else {
+                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - 1] + (j as i64 + 1) * a[i]);
             }
         }
     }
-    let mut ans = dp[0][m - 1];
     for i in 0..n {
-        ans = max(dp[i][m - 1], ans);
+        println!("{}", dp[i].iter().join(" "));
+    }
+    let mut ans = -1e18 as i64;
+    for i in 0..m {
+        ans = max(ans, dp[n - 1][i]);
     }
     println!("{}", ans);
 }
-
 fn main() {
     solve();
 }
