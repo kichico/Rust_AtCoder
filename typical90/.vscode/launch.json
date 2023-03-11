@@ -1,0 +1,3338 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-001'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-001",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-001",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-001'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-001",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-001",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-002'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-002",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-002",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-002'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-002",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-002",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-003'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-003",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-003",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-003'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-003",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-003",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-004'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-004",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-004",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-004'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-004",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-004",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-005'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-005",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-005",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-005'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-005",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-005",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-006'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-006",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-006",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-006'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-006",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-006",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-007'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-007",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-007",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-007'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-007",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-007",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-008'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-008",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-008",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-008'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-008",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-008",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-009'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-009",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-009",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-009'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-009",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-009",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-010'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-010",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-010",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-010'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-010",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-010",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-011'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-011",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-011",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-011'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-011",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-011",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-012'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-012",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-012",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-012'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-012",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-012",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-013'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-013",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-013",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-013'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-013",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-013",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-014'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-014",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-014",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-014'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-014",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-014",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-015'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-015",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-015",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-015'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-015",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-015",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-016'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-016",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-016",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-016'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-016",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-016",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-017'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-017",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-017",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-017'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-017",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-017",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-018'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-018",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-018",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-018'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-018",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-018",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-019'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-019",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-019",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-019'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-019",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-019",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-020'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-020",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-020",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-020'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-020",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-020",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-021'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-021",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-021",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-021'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-021",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-021",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-022'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-022",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-022",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-022'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-022",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-022",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-023'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-023",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-023",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-023'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-023",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-023",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-024'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-024",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-024",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-024'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-024",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-024",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-025'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-025",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-025",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-025'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-025",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-025",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-026'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-026",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-026",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-026'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-026",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-026",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-027'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-027",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-027",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-027'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-027",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-027",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-028'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-028",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-028",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-028'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-028",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-028",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-029'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-029",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-029",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-029'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-029",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-029",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-030'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-030",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-030",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-030'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-030",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-030",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-031'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-031",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-031",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-031'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-031",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-031",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-032'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-032",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-032",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-032'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-032",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-032",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-033'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-033",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-033",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-033'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-033",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-033",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-034'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-034",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-034",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-034'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-034",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-034",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-035'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-035",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-035",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-035'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-035",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-035",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-036'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-036",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-036",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-036'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-036",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-036",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-037'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-037",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-037",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-037'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-037",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-037",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-038'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-038",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-038",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-038'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-038",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-038",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-039'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-039",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-039",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-039'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-039",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-039",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-040'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-040",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-040",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-040'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-040",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-040",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-041'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-041",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-041",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-041'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-041",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-041",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-042'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-042",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-042",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-042'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-042",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-042",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-043'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-043",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-043",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-043'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-043",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-043",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-044'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-044",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-044",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-044'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-044",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-044",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-045'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-045",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-045",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-045'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-045",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-045",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-046'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-046",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-046",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-046'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-046",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-046",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-047'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-047",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-047",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-047'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-047",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-047",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-048'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-048",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-048",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-048'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-048",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-048",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-049'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-049",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-049",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-049'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-049",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-049",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-050'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-050",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-050",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-050'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-050",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-050",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-051'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-051",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-051",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-051'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-051",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-051",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-052'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-052",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-052",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-052'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-052",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-052",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-053'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-053",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-053",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-053'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-053",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-053",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-054'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-054",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-054",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-054'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-054",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-054",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-055'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-055",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-055",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-055'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-055",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-055",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-056'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-056",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-056",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-056'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-056",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-056",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-057'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-057",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-057",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-057'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-057",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-057",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-058'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-058",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-058",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-058'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-058",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-058",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-059'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-059",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-059",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-059'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-059",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-059",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-060'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-060",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-060",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-060'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-060",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-060",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-061'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-061",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-061",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-061'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-061",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-061",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-062'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-062",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-062",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-062'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-062",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-062",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-063'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-063",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-063",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-063'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-063",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-063",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-064'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-064",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-064",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-064'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-064",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-064",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-065'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-065",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-065",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-065'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-065",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-065",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-066'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-066",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-066",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-066'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-066",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-066",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-067'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-067",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-067",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-067'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-067",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-067",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-068'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-068",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-068",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-068'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-068",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-068",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-069'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-069",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-069",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-069'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-069",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-069",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-070'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-070",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-070",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-070'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-070",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-070",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-071'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-071",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-071",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-071'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-071",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-071",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-072'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-072",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-072",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-072'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-072",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-072",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-073'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-073",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-073",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-073'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-073",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-073",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-074'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-074",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-074",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-074'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-074",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-074",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-075'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-075",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-075",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-075'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-075",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-075",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-076'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-076",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-076",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-076'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-076",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-076",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-077'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-077",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-077",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-077'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-077",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-077",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-078'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-078",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-078",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-078'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-078",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-078",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-079'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-079",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-079",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-079'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-079",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-079",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-080'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-080",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-080",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-080'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-080",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-080",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-081'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-081",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-081",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-081'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-081",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-081",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-082'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-082",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-082",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-082'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-082",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-082",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-083'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-083",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-083",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-083'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-083",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-083",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-084'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-084",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-084",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-084'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-084",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-084",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-085'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-085",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-085",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-085'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-085",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-085",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-086'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-086",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-086",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-086'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-086",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-086",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-087'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-087",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-087",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-087'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-087",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-087",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-088'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-088",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-088",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-088'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-088",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-088",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-089'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-089",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-089",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-089'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-089",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-089",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'typical90-090'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=typical90-090",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-090",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'typical90-090'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=typical90-090",
+                    "--package=typical90"
+                ],
+                "filter": {
+                    "name": "typical90-090",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

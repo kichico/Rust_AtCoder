@@ -12,11 +12,22 @@ use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 
 #[allow(non_snake_case)]
 fn solve() {
-    input! {mut n:i64}
-    while n > 1000 {
-        n -= 1000;
+    input! {
+        n:usize,mut len:[(Usize1,Usize1);n]
     }
-    println!("{}", 1000 - n);
+    let mut isu = vec![false; 1e5 as usize];
+    for (l, r) in len {
+        for i in l..=r {
+            isu[i] = true;
+        }
+    }
+    let mut cnt = 0;
+    for i in 0..1e5 as usize {
+        if isu[i] {
+            cnt += 1;
+        }
+    }
+    println!("{}", cnt);
 }
 
 fn main() {

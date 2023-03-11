@@ -1,49 +1,33 @@
 #[allow(unused_imports)]
+use std::hash::Hash;
+#[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
-use proconio::{fastout, input, marker::Chars};
+use num::*;
 #[allow(unused_imports)]
-use std::cmp::{max, min};
+use num_integer::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
-
+use proconio::{
+    fastout, input,
+    marker::{Chars, Usize1},
+};
+#[allow(unused_imports)]
+use std::cmp::*;
+#[allow(unused_imports)]
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque,BinaryHeap};
+#[allow(unused_imports)]
+use std::mem::swap;
+#[allow(dead_code)]
 #[allow(non_snake_case)]
-#[fastout]
+fn to_char(x: i64) -> char {
+    return std::char::from_digit(x as u32, 10).unwrap();
+}
+#[allow(non_snake_case)]
 fn solve() {
     input! {
-        n: usize,
-        k: usize,
-        a: [i64;n],
+        n:usize
     }
-    let mut right: usize = 0;
-    let mut st: HashMap<i64, i64> = HashMap::new();
-    let mut ans: usize = 0;
-    for left in 0..n {
-        if left > 0 {
-            let pt = st.entry(a[left - 1]).or_insert(0);
-            *pt -= 1;
-            if st.get(&a[left - 1]) == Some(&0) {
-                st.remove(&a[left - 1]);
-            }
-        }
-        if left == right {
-            let pt = st.entry(a[left]).or_insert(0);
-            *pt += 1;
-            right += 1;
-        }
-        while right < n && (st.len() < k || st.contains_key(&a[right])) {
-            let p = st.entry(a[right]).or_insert(0);
-            *p += 1;
-            right += 1;
-        }
-
-        dbg!(&st, right);
-        dbg!(left, right);
-        ans = max(right - left, ans);
-    }
-    println!("{}", ans);
 }
-
 fn main() {
     solve();
 }

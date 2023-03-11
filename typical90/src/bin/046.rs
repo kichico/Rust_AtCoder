@@ -1,60 +1,33 @@
 #[allow(unused_imports)]
+use std::hash::Hash;
+#[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
-use proconio::{fastout, input, marker::Chars};
+use num::*;
 #[allow(unused_imports)]
-use std::cmp::{max, min};
+use num_integer::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
-
+use proconio::{
+    fastout, input,
+    marker::{Chars, Usize1},
+};
+#[allow(unused_imports)]
+use std::cmp::*;
+#[allow(unused_imports)]
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque,BinaryHeap};
+#[allow(unused_imports)]
+use std::mem::swap;
+#[allow(dead_code)]
 #[allow(non_snake_case)]
-#[fastout]
+fn to_char(x: i64) -> char {
+    return std::char::from_digit(x as u32, 10).unwrap();
+}
+#[allow(non_snake_case)]
 fn solve() {
     input! {
-        n: usize,
-        mut a: [i64;n],
-        mut b: [i64;n],
-        mut c: [i64;n],
+        n:usize
     }
-    for i in 0..n {
-        a[i] %= 46;
-        b[i] %= 46;
-        c[i] %= 46;
-    }
-    let (mut mpa, mut mpb, mut mpc): (HashMap<i64, i64>, HashMap<i64, i64>, HashMap<i64, i64>) =
-        (HashMap::new(), HashMap::new(), HashMap::new());
-    for i in 0..47 {
-        mpa.insert(i, 0);
-        mpb.insert(i, 0);
-        mpc.insert(i, 0);
-    }
-    for i in 0..n {
-        let pt = mpa.entry(a[i]).or_insert(0);
-        *pt += 1;
-        let pt = mpb.entry(b[i]).or_insert(0);
-        *pt += 1;
-        let pt = mpc.entry(c[i]).or_insert(0);
-        *pt += 1;
-    }
-    let mut ans = 0;
-    for i in 0..47 {
-        for j in 0..47 {
-            for k in 0..47 {
-                if (i + j + k) % 46 != 0 {
-                    continue;
-                }
-                let an = mpa.get(&i).unwrap();
-                let bn = mpb.get(&j).unwrap();
-                let cn = mpc.get(&k).unwrap();
-                if an != &0 && bn != &0 && cn != &0 {
-                    ans += an * bn * cn;
-                }
-            }
-        }
-    }
-    println!("{}", ans);
 }
-
 fn main() {
     solve();
 }

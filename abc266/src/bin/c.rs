@@ -1,11 +1,10 @@
+use itertools::enumerate;
 #[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
-#[allow(unused_imports)]
-use petgraph::*;
 #[allow(unused_imports)]
 use proconio::{
     fastout, input,
@@ -14,7 +13,9 @@ use proconio::{
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::hash::Hash;
 #[allow(unused_imports)]
 use std::mem::swap;
 #[allow(dead_code)]
@@ -22,34 +23,22 @@ use std::mem::swap;
 fn to_char(x: i64) -> char {
     return std::char::from_digit(x as u32, 10).unwrap();
 }
-
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        rect:[(i64,i64);4]
+        coord:[(i64,i64);4]
     }
-    let mut ang = vec![0; 4];
-    for i in 0..4 {
-        let (x, y) = rect[i];
-        let mut sm = i - 1;
-        if sm < 0 {
-            sm += 4;
+    let neighbor = vec![(3, 1), (0, 2), (1, 3), (2, 0)];
+    for (i, (u, v)) in enumerate(neighbor) {
+        let va = (coord[u].0 - coord[i].0, coord[u].1 - coord[i].1);
+        let vb = (coord[v].0 - coord[i].0, coord[v].1 - coord[i].1);
+        if va.0 * vb.1 - vb.0 * va.1 > 0 {
+            println!("No");
+            return;
         }
-        let mut la = i + 1;
-        if la >= 4 {
-            la -= 4;
-        }
-        let (sx, sy) = rect[sm as usize];
-        let (lx, ly) = rect[la as usize];
-        let vs = (sx - x, sy - y);
-        let vl = (lx - x, ly - y);
-        let innerproduct = vs.0 * vl.0 + vs.1 * vl.1;
-        let theta = (innerproduct / (vs.0.pow(2) + vs.1.pow(2).sqrt())
-            * (vl.0.pow(2) + vl.1.pow(2).sqrt())) as f64;
-        let theta = theta.cos().acos();
     }
+    println!("Yes");
 }
-
 fn main() {
     solve();
 }

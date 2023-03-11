@@ -1,44 +1,42 @@
 #[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
-use proconio::{fastout, input, marker::Chars};
+use num::*;
 #[allow(unused_imports)]
-use std::cmp::{max, min};
+use num_integer::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
-
+use proconio::{
+    fastout, input,
+    marker::{Chars, Usize1},
+};
+#[allow(unused_imports)]
+use std::cmp::*;
+#[allow(unused_imports)]
+use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::hash::Hash;
+#[allow(unused_imports)]
+use std::mem::swap;
+#[allow(dead_code)]
 #[allow(non_snake_case)]
-#[fastout]
+fn to_char(x: i64) -> char {
+    return std::char::from_digit(x as u32, 10).unwrap();
+}
+#[allow(non_snake_case)]
 fn solve() {
     input! {
-        n: usize,K:i64,
+        n:i32,k:i32
     }
-    let mut a: Vec<i64> = vec![0; n + 1];
-    let mut div: Vec<i64> = vec![0; n + 1];
-    for i in 0..n + 1 {
-        div[i] = i as i64;
+    let mut vec: Vec<_> = (2..=n).into_iter().collect();
+    if k == 1 {
+        println!("{}", n - 1);
+        return;
     }
-    for i in 2..n {
-        if div[i] == 1 {
-            continue;
-        }
-        let mut coe = 1;
-        while coe * i <= n {
-            a[coe * i] += 1;
-            div[coe * i] /= i as i64;
-            coe += 1;
-        }
-        dbg!(i, div[i]);
+    for i in 2..=k {
+        let mut temp: Vec<i32> = Vec::new();
+        for v in &vec {}
     }
-    let mut cnt = 0;
-    for i in 2..n + 1 {
-        if a[i] >= K {
-            cnt += 1;
-        }
-    }
-    println!("{}", cnt);
 }
-
 fn main() {
     solve();
 }

@@ -1,31 +1,33 @@
 #[allow(unused_imports)]
+use std::hash::Hash;
+#[allow(unused_imports)]
 use itertools::Itertools;
+#[allow(unused_imports)]
+use num::*;
+#[allow(unused_imports)]
+use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
     fastout, input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
-use std::cmp::{max, min};
+use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
-
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque,BinaryHeap};
+#[allow(unused_imports)]
+use std::mem::swap;
+#[allow(dead_code)]
 #[allow(non_snake_case)]
-#[fastout]
+fn to_char(x: i64) -> char {
+    return std::char::from_digit(x as u32, 10).unwrap();
+}
+#[allow(non_snake_case)]
 fn solve() {
     input! {
-        n: usize,
-        m: usize,
-        edge: [(Usize1,Usize1);m],
+        n:usize
     }
-    let mut g: Vec<usize> = vec![0; n];
-    for &(u, v) in &edge {
-        g[u.max(v)] += 1;
-    }
-    let ans = g.iter().filter(|c| c == &&1).count();
-    println!("{}", ans);
 }
-
 fn main() {
     solve();
 }

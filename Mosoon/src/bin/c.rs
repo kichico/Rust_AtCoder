@@ -19,14 +19,22 @@ use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
 #[fastout]
 fn solve() {
     input! {
-        n: usize,day:i64,rest:i64,p:[i64;n]
+        n:usize,a:[i64;n]
     }
-    let mut ans = rest;
-    for i in 0..n {
-        ans += day / p[i];
-        if day % p[i] != 0 {
-            ans += 1;
-        }
+    let mut cumsum = vec![0; n];
+    cumsum[0] = a[0];
+    for i in 1..n {
+        cumsum[i] = a[i] + cumsum[i - 1];
+    }
+    let mut cumsum_right = vec![0; n];
+    cumsum_right[n - 1] = a[n - 1];
+    for i in (0..n - 1).rev() {
+        cumsum_right[i] = a[i] + cumsum_right[i + 1];
+    }
+    let mut ans = 1e18 as i64;
+    for i in 0..n - 1 {
+        let dist = abs(cumsum[i] - cumsum_right[i + 1]);
+        ans = min(ans, dist);
     }
     println!("{}", ans);
 }

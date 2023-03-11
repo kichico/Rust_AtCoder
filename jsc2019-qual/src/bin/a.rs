@@ -13,7 +13,6 @@ use std::cmp::{max, min};
 use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
 
 #[allow(non_snake_case)]
-#[fastout]
 fn solve() {
     input! {
         M: i64,

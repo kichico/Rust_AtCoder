@@ -1,13 +1,7 @@
-﻿abc048/testcases/a.yml
-abc048/testcases/b.yml
-abc048/testcases/c.yml
-abc048/testcases/d.yml
-abc048/target/*
-.cargo/*
-abc048/target/debug/.fingerprint
+﻿.cargo/*
 target/.rustc_info.json
 target/
 */testcases/
 competitive-programming-rs/*
+*/Cargo.*
 */Cargo.lock
-*/Cargo.toml

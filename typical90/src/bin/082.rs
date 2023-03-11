@@ -1,34 +1,33 @@
 #[allow(unused_imports)]
+use std::hash::Hash;
+#[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]
-use proconio::{fastout, input, marker::Chars};
+use num::*;
 #[allow(unused_imports)]
-use std::cmp::{max, min};
+use num_integer::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
-
+use proconio::{
+    fastout, input,
+    marker::{Chars, Usize1},
+};
+#[allow(unused_imports)]
+use std::cmp::*;
+#[allow(unused_imports)]
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque,BinaryHeap};
+#[allow(unused_imports)]
+use std::mem::swap;
+#[allow(dead_code)]
 #[allow(non_snake_case)]
-#[fastout]
+fn to_char(x: i64) -> char {
+    return std::char::from_digit(x as u32, 10).unwrap();
+}
+#[allow(non_snake_case)]
 fn solve() {
     input! {
-        L:i128,
-        R:i128,
+        n:usize
     }
-    let MOD = 1e9 as i128 + 7;
-    let mut ans = 0;
-    let keta = L.to_string().len() as i128;
-    let mut now = L;
-    let limit = R.to_string().len() as i128;
-    for k in keta..=limit {
-        let limit = min(R, 10i128.pow(k as u32) - 1);
-        let num = (limit - now + 1) * (limit + now) * k / 2;
-        ans += num;
-        ans %= MOD;
-        now = 10i128.pow((k) as u32);
-    }
-    println!("{}", ans);
 }
-
 fn main() {
     solve();
 }
