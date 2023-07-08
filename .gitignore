@@ -5,3 +5,5 @@ target/
 competitive-programming-rs/*
 */Cargo.*
 */Cargo.lock
+*/*.rlib
+proconio*

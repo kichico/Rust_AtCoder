@@ -22,20 +22,27 @@ use std::mem::swap;
 fn to_char(x: i64) -> char {
     return std::char::from_digit(x as u32, 10).unwrap();
 }
+
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n:i32,k:i32
+        n:usize,k:usize
     }
-    let mut vec: Vec<_> = (2..=n).into_iter().collect();
     if k == 1 {
         println!("{}", n - 1);
         return;
     }
-    for i in 2..=k {
-        let mut temp: Vec<i32> = Vec::new();
-        for v in &vec {}
+    let mut ans = 0;
+    let mut factors = vec![0; n as usize + 1];
+    for x in 2..=n {
+        if factors[x] != 0 {
+            continue;
+        }
+        for v in (x..=n).step_by(x) {
+            factors[v] += 1;
+        }
     }
+    println!("{}", factors.iter().filter(|x| **x >= k).count());
 }
 fn main() {
     solve();

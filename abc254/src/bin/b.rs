@@ -1,11 +1,11 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use std::hash::Hash;
+#[allow(unused_imports)]
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
-#[allow(unused_imports)]
-use petgraph::*;
 #[allow(unused_imports)]
 use proconio::{
     fastout, input,
@@ -14,7 +14,7 @@ use proconio::{
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque,BinaryHeap};
 #[allow(unused_imports)]
 use std::mem::swap;
 #[allow(dead_code)]
@@ -26,19 +26,6 @@ fn to_char(x: i64) -> char {
 fn solve() {
     input! {
         n:usize
-    }
-    let mut prev = vec![1];
-    println!("{}", prev.iter().join(" "));
-    for i in 1..n {
-        let mut current = vec![1; i + 1];
-        for j in 0..(i + 1) {
-            if j == 0 || j == i {
-                continue;
-            }
-            current[j] = prev[j - 1] + prev[j];
-        }
-        println!("{}", &current.iter().join(" "));
-        prev = current;
     }
 }
 fn main() {

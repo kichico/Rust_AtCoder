@@ -1,0 +1,304 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc230-a'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc230-a",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc230-a'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc230-a",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc230-b'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc230-b",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc230-b'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc230-b",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc230-c'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc230-c",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc230-c'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc230-c",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc230-d'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc230-d",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc230-d'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc230-d",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc230-e'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc230-e",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc230-e'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc230-e",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc230-f'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc230-f",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc230-f'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc230-f",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc230-g'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc230-g",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc230-g'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc230-g",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc230-h'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc230-h",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-h",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc230-h'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc230-h",
+                    "--package=abc230"
+                ],
+                "filter": {
+                    "name": "abc230-h",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

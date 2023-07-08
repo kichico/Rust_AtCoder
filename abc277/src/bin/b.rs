@@ -1,11 +1,10 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
+use maplit::hashset;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
-#[allow(unused_imports)]
-use petgraph::*;
 #[allow(unused_imports)]
 use proconio::{
     fastout, input,
@@ -14,7 +13,10 @@ use proconio::{
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::hash::Hash;
+use std::iter::FromIterator;
 #[allow(unused_imports)]
 use std::mem::swap;
 #[allow(dead_code)]
@@ -25,23 +27,22 @@ fn to_char(x: i64) -> char {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n:usize,s:[Chars;n]
+        n:usize,card:[Chars;n]
     }
-    let mut all: HashSet<Vec<char>> = HashSet::new();
-    let first = "HDCS".to_string();
-    let second = "A23456789TJQK".to_string();
-    for i in 0..n {
-        all.insert(s[i].clone());
-        if !first.contains(s[i][0]) || !second.contains(s[i][1]) {
+    let kind: HashSet<Vec<char>> = HashSet::from_iter(card.clone().into_iter());
+    if kind.len() != n {
+        println!("No");
+        return;
+    }
+    let first = "HDCS";
+    let second = "A23456789TJQK";
+    for s in card {
+        if !first.contains(s[0]) || !second.contains(s[1]) {
             println!("No");
             return;
         }
     }
-    if all.len() != n {
-        println!("No");
-    } else {
-        println!("Yes");
-    }
+    println!("Yes");
 }
 fn main() {
     solve();

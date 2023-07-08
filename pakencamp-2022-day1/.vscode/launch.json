@@ -1,0 +1,563 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-a'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-a",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-a'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-a",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-b'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-b",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-b'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-b",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-c'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-c",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-c'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-c",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-d'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-d",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-d'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-d",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-e'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-e",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-e'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-e",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-f'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-f",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-f'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-f",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-g'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-g",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-g'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-g",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-h'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-h",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-h",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-h'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-h",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-h",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-i'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-i",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-i",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-i'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-i",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-i",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-j'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-j",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-j",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-j'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-j",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-j",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-k'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-k",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-k",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-k'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-k",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-k",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-l'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-l",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-l",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-l'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-l",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-l",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-m'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-m",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-m",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-m'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-m",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-m",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-n'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-n",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-n",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-n'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-n",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-n",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pakencamp-2022-day1-o'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pakencamp-2022-day1-o",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-o",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pakencamp-2022-day1-o'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pakencamp-2022-day1-o",
+                    "--package=pakencamp-2022-day1"
+                ],
+                "filter": {
+                    "name": "pakencamp-2022-day1-o",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

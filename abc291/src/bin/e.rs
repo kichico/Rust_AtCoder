@@ -54,15 +54,15 @@ impl TopologicalSort {
             }
         }
         while let Some(Reverse(u)) = heap.pop() {
+            if heap.len() != 0 {
+                return false;
+            }
             self.res.push(u);
             for neighbor in &self.graph[u] {
                 self.deg[*neighbor] -= 1;
                 if self.deg[*neighbor] == 0 {
                     heap.push(Reverse(*neighbor));
                 }
-            }
-            if heap.len() > 1 {
-                return false;
             }
         }
         for d in &self.deg {
@@ -83,13 +83,9 @@ fn solve() {
         n:usize,m:usize,edge:[(Usize1,Usize1);m]
     }
     let mut topo = TopologicalSort::new(n);
-    let mut coming = vec![0; n];
-    let mut going = vec![0; n];
     let mut g: Vec<Vec<usize>> = vec![Vec::new(); n];
     for (x, y) in edge {
         topo.add_edge(x, y);
-        coming[x] += 1;
-        going[y] += 1;
         g[y].push(x);
     }
     if !topo.solve() {

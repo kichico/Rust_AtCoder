@@ -1,12 +1,9 @@
-use itertools::enumerate;
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
-#[allow(unused_imports)]
-use petgraph::*;
 #[allow(unused_imports)]
 use proconio::{
     fastout, input,
@@ -15,7 +12,9 @@ use proconio::{
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::hash::Hash;
 #[allow(unused_imports)]
 use std::mem::swap;
 #[allow(dead_code)]
@@ -67,43 +66,34 @@ impl UnionFind {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n:usize,rudder:[(Usize1,Usize1);n]
+        n:usize,ladder:[(Usize1,Usize1);n]
     }
-    let mut point: BTreeSet<usize> = BTreeSet::new();
-    for (u, v) in &rudder {
-        point.insert(*u);
-        point.insert(*v);
+    let mut st: BTreeSet<usize> = BTreeSet::new();
+    let mut uf = UnionFind::new(n * 2);
+    for (from, to) in &ladder {
+        st.insert(*from);
+        st.insert(*to);
     }
-    if point.iter().clone().next() != Some(&0) {
+    if !st.contains(&0) {
         println!("1");
         return;
     }
-    let mut comp: HashMap<usize, usize> = HashMap::new();
-    let mut rev: HashMap<usize, usize> = HashMap::new();
-    for (i, x) in enumerate(point) {
-        comp.insert(x, i);
-        rev.insert(i, x);
+    let mut mp: HashMap<usize, usize> = HashMap::new();
+    let mut rev = mp.clone();
+    for (i, v) in enumerate(st) {
+        mp.insert(v, i);
+        rev.insert(i, v);
     }
-    let mut comped = vec![(0, 0); n];
-    for i in 0..n {
-        let (u, v) = (
-            comp.get(&rudder[i].0).unwrap(),
-            comp.get(&rudder[i].1).unwrap(),
-        );
-        comped[i] = (*u, *v);
+    for (from, to) in &ladder {
+        uf.unite(*mp.get(from).unwrap(), *mp.get(to).unwrap());
     }
-    let n = comp.len();
-    let mut uf = UnionFind::new(comp.len());
-    for (u, v) in comped {
-        uf.unite(u, v);
-    }
-    let mut ans = 0;
-    for i in 0..n {
-        if uf.equiv(i, 0) {
-            ans = i;
+    dbg!(&uf.parent);
+    for i in (0..mp.len()).rev() {
+        if uf.equiv(0, i) {
+            println!("{}", rev.get(&(i)).unwrap() + 1);
+            return;
         }
     }
-    println!("{}", rev.get(&ans).unwrap() + 1);
 }
 fn main() {
     solve();
