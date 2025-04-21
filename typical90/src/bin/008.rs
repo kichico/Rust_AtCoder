@@ -1,20 +1,20 @@
 #[allow(unused_imports)]
 use std::hash::Hash;
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque,BinaryHeap};
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque, BinaryHeap};
 #[allow(unused_imports)]
 use std::mem::swap;
 #[allow(dead_code)]

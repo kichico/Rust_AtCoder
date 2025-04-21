@@ -1,47 +1,99 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
-use num_integer::Roots;
-#[allow(unused_imports)]
-use petgraph::*;
+use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::hash::Hash;
+#[allow(unused_imports)]
+use std::mem::swap;
+#[allow(dead_code)]
 #[allow(non_snake_case)]
+fn to_char(x: i64) -> char {
+    return std::char::from_digit(x as u32, 10).unwrap();
+}
+#[derive(Debug, Clone)]
+pub struct Eratosthenes {
+    min_factor: Vec<usize>,
+}
 
-fn factors(x: i64) -> i64 {
-    let limit = (x as f32).sqrt() as i64 + 1;
-    let mut ret = 0;
-    for i in 1..limit {
-        if x % i == 0 {
-            ret += 2;
-            if i * i == x {
-                ret -= 1;
+impl Eratosthenes {
+    pub fn new(n: i64) -> Self {
+        let n = n as usize;
+        let mut min_factor = vec![0usize; n as usize + 1];
+        min_factor[1] = 1;
+        for i in 2..=n {
+            if min_factor[i] != 0 {
+                continue;
+            }
+            min_factor[i] = i;
+            for factor in (i * 2..=n).step_by(i) {
+                if min_factor[factor] == 0 {
+                    min_factor[factor] = i;
+                }
             }
         }
+        return Eratosthenes { min_factor };
     }
-    return ret;
+    pub fn prime_factorize(&mut self, n: i64) -> Vec<(i64, i64)> {
+        let mut n = n as usize;
+        let mut ret: Vec<(i64, i64)> = Vec::new();
+        while n > 1 {
+            let p = self.min_factor[n] as usize;
+            let mut exp = 0;
+            while self.min_factor[n] == p {
+                n /= p;
+                exp += 1;
+            }
+            ret.push((p as i64, exp));
+        }
+        return ret;
+    }
+    pub fn enumerate_divisors(&mut self, n: i64) -> Vec<i64> {
+        let mut ret = vec![1i64];
+        let pf = self.prime_factorize(n);
+        for (prime, exp) in pf {
+            let mut divisor = 1;
+            for _i in 0..exp {
+                divisor *= prime;
+                ret.push(divisor);
+            }
+        }
+        ret.sort();
+        return ret;
+    }
 }
-
+#[allow(non_snake_case)]
 fn solve() {
     input! {
-        n: usize,
+        n:i64
     }
-    let mut current = 1;
+    let mut sieve = Eratosthenes::new(n);
+    let mut ans = 1;
+    let mut factors: HashMap<i64, i64> = HashMap::new();
     for i in 1..=n {
-        factors(i as i64);
+        let v = sieve.prime_factorize(i);
+        for (p, num) in v {
+            let e = factors.entry(p).or_insert(0);
+            *e += num;
+        }
     }
-    println!("");
+    for (_p, num) in factors {
+        ans *= num + 1;
+        ans %= 1e9 as i64 + 7;
+    }
+    println!("{}", ans);
 }
-
 fn main() {
     solve();
 }

@@ -1,21 +1,20 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use std::hash::Hash;
+#[allow(unused_imports)]
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
-use num_traits::Pow;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
-#[allow(unused_imports)]
-use std::hash::Hash;
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque, BinaryHeap};
 #[allow(unused_imports)]
 use std::mem::swap;
 #[allow(dead_code)]
@@ -26,12 +25,7 @@ fn to_char(x: i64) -> char {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        a:u128,b:u32,c:u128
-    }
-    if a < c.pow(b) {
-        println!("Yes");
-    } else {
-        println!("No");
+        n:usize
     }
 }
 fn main() {

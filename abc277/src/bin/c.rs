@@ -6,7 +6,7 @@ use num::*;
 use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
@@ -46,7 +46,7 @@ impl UnionFind {
             return;
         }
         if self.parent[xpar] > self.parent[y] {
-            swap(&mut xpar, &mut ypar);
+            std::mem::swap(&mut xpar, &mut ypar);
         }
         let x = xpar;
         let y = ypar;
@@ -66,31 +66,29 @@ impl UnionFind {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n:usize,ladder:[(Usize1,Usize1);n]
+        n:usize,radder:[(Usize1,Usize1);n]
     }
+    let mut conv: HashMap<usize, usize> = HashMap::new();
     let mut st: BTreeSet<usize> = BTreeSet::new();
-    let mut uf = UnionFind::new(n * 2);
-    for (from, to) in &ladder {
-        st.insert(*from);
-        st.insert(*to);
+    st.insert(0);
+    let mut rev = conv.clone();
+    for (a, b) in &radder {
+        st.insert(*a);
+        st.insert(*b);
     }
-    if !st.contains(&0) {
-        println!("1");
-        return;
-    }
-    let mut mp: HashMap<usize, usize> = HashMap::new();
-    let mut rev = mp.clone();
     for (i, v) in enumerate(st) {
-        mp.insert(v, i);
+        conv.insert(v, i);
         rev.insert(i, v);
     }
-    for (from, to) in &ladder {
-        uf.unite(*mp.get(from).unwrap(), *mp.get(to).unwrap());
+
+    let mut uf = UnionFind::new(conv.len() + 1);
+    for (a, b) in radder {
+        uf.unite(*conv.get(&a).unwrap(), *conv.get(&b).unwrap());
     }
-    dbg!(&uf.parent);
-    for i in (0..mp.len()).rev() {
-        if uf.equiv(0, i) {
-            println!("{}", rev.get(&(i)).unwrap() + 1);
+    //println!("{}", uf.parent.iter().join(" "));
+    for i in (0..conv.len()).rev() {
+        if uf.equiv(i, 0) {
+            println!("{}", rev.get(&i).unwrap() + 1);
             return;
         }
     }

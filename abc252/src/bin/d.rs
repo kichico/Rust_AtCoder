@@ -25,14 +25,16 @@ fn solve() {
     for i in 0..n {
         *dict.entry(a[i]).or_insert(0) += 1;
     }
-    let mut rest = dict.len() as i64;
     let mut ans = 0;
+    let mut total = n.clone() as i64;
+    let mut some_num = 0;
     for (x, num) in &dict {
-        if rest <= 2 {
-            continue;
-        }
-        ans += num * ((rest - 2) * (rest - 1)) / 2;
-        rest -= 1;
+        some_num += num * (num - 1) / 2;
+    }
+    for (_x, num) in &dict {
+        some_num = 0.max(some_num - num * (num - 1) / 2);
+        total -= num;
+        ans += (*num) * ((total * (total - 1)) / 2 - some_num);
     }
     println!("{}", ans);
 }

@@ -19,11 +19,11 @@ use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
 #[fastout]
 fn solve() {
     input! {
-        n: usize,
+        n: u8,
     }
+    println!("{}", n as char);
 }
 
 fn main() {
     solve();
 }
-

@@ -6,7 +6,7 @@ use num::*;
 use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
@@ -25,9 +25,9 @@ fn to_char(x: i64) -> char {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n:usize,k:i64,a:[i64;n]
+        n:usize,x:usize,p:[usize;n]
     }
-    println!("{}", a.iter().find_position(|&&x| x == k).unwrap().0 + 1);
+    println!("{}", p.iter().find_position(|v| v == &&x).unwrap().0 + 1);
 }
 fn main() {
     solve();

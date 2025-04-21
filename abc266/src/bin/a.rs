@@ -1,12 +1,12 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
@@ -25,9 +25,9 @@ fn to_char(x: i64) -> char {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n:Chars
+        s:Chars
     }
-    println!("{}", n[n.len() / 2]);
+    println!("{}", s[s.len() / 2]);
 }
 fn main() {
     solve();

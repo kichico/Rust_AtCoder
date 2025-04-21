@@ -1,43 +1,33 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use std::hash::Hash;
 #[allow(unused_imports)]
-use proconio::{fastout, input, marker::Chars};
+use itertools::*;
 #[allow(unused_imports)]
-use std::cmp::{max, min};
+use num::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeSet, HashMap, HashSet, VecDeque};
-
+use num_integer::*;
+#[allow(unused_imports)]
+use proconio::{
+    input,
+    marker::{Chars, Usize1},
+};
+#[allow(unused_imports)]
+use std::cmp::*;
+#[allow(unused_imports)]
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque, BinaryHeap};
+#[allow(unused_imports)]
+use std::mem::swap;
+#[allow(dead_code)]
 #[allow(non_snake_case)]
-#[fastout]
+fn to_char(x: i64) -> char {
+    return std::char::from_digit(x as u32, 10).unwrap();
+}
+#[allow(non_snake_case)]
 fn solve() {
     input! {
-        n: usize,length:usize,k:usize,a:[i64;n]
+        n:usize
     }
-    let (mut left, mut right): (usize, usize) = (0, length + 1);
-    while right - left > 1 {
-        let mid: usize = left + (right - left) / 2;
-        let mut current = 0;
-        let mut cnt = k.clone();
-        let mut mini = length as i64;
-        let mut i = 0;
-        while cnt > 0 && i < n {
-            if a[i] - current >= mid as i64 {
-                mini = mini.min(a[i] - current);
-                current = a[i];
-                cnt -= 1;
-            }
-            i += 1;
-        }
-        mini = mini.min(length as i64 - current);
-        if mini < mid as i64 || cnt != 0 {
-            right = mid;
-        } else {
-            left = mid;
-        }
-    }
-    println!("{}", left);
 }
-
 fn main() {
     solve();
 }

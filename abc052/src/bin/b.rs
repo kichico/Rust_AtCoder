@@ -1,40 +1,44 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
-use num_integer::Roots;
-#[allow(unused_imports)]
-use petgraph::*;
+use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::hash::Hash;
+#[allow(unused_imports)]
+use std::mem::swap;
+#[allow(dead_code)]
 #[allow(non_snake_case)]
-#[fastout]
+fn to_char(x: i64) -> char {
+    return std::char::from_digit(x as u32, 10).unwrap();
+}
+#[allow(non_snake_case)]
 fn solve() {
     input! {
-        mut n:i64,s:String
+        n:usize,s:Chars
     }
+    let mut x = 0;
     let mut ans = 0;
-    let mut value = 0;
-    let s: Vec<char> = s.chars().collect();
-    for c in s {
-        if c == 'I' {
-            value += 1;
+    for i in 0..n {
+        if s[i] == 'I' {
+            x += 1;
         } else {
-            value -= 1;
+            x -= 1;
         }
-        ans = ans.max(value);
+        ans = ans.max(x);
     }
     println!("{}", ans);
 }
-
 fn main() {
     solve();
 }

@@ -1,0 +1,104 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'tools'",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin",
+                    "score",
+                    "in/0000.txt",
+                    "out.txt"
+                ],
+                "filter": {
+                    "name": "tools",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'score'",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin",
+                    "score",
+                    "in/0000.txt",
+                    "out.txt"
+                ],
+                "filter": {
+                    "name": "score",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'score'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=score",
+                    "--package=tools"
+                ],
+                "filter": {
+                    "name": "score",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'gen'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=gen",
+                    "--package=tools"
+                ],
+                "filter": {
+                    "name": "gen",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'gen'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=gen",
+                    "--package=tools"
+                ],
+                "filter": {
+                    "name": "gen",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

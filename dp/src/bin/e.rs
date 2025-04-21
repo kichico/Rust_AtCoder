@@ -1,22 +1,25 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
 #[allow(unused_imports)]
-use petgraph::*;
-#[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::hash::Hash;
 #[allow(unused_imports)]
 use std::mem::swap;
+#[allow(unused_imports)]
+use std::ops::Bound::{Excluded, Included, Unbounded};
+
 #[allow(dead_code)]
 #[allow(non_snake_case)]
 fn to_char(x: i64) -> char {
@@ -26,40 +29,31 @@ fn to_char(x: i64) -> char {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        N:usize,W:usize,mut goods:[(i64,i64);N]
+        N:usize,W:usize,items:[(usize,usize);N]
     }
-    let mut value = vec![0; N];
-    let mut weight = vec![0; N];
-    goods.sort_by(|x, y| x.0.cmp(&y.0));
+    let V = items.iter().clone().map(|(_x, y)| *y).sum::<usize>();
+    let mut dp = vec![vec![W + 1 as usize; V + 1 as usize + 10]; N];
+    dp[0][items[0].1] = items[0].0;
     for i in 0..N {
-        weight[i] = goods[i].0;
-        value[i] = goods[i].1;
+        dp[i][0] = 0;
     }
-    let mut V = 0;
-    for i in 0..N {
-        V += value[i];
-    }
-    V += 1;
-    let mut dp = vec![vec![10000000000 as i64; V as usize + 1]; N + 1];
-    dp[0][0] = 0;
-    for i in 0..N {
-        for val in 0..=V as i64 {
-            let ww = val as usize;
-            dp[i + 1][ww] = dp[i][ww];
-            if val >= value[i] {
-                dp[i + 1][ww] = min(dp[i + 1][ww], dp[i][(val - value[i]) as usize] + weight[i]);
+    for i in 1..N {
+        dp[i] = dp[i - 1].clone();
+        for v in 0..V {
+            if items[i].1 + v > V {
+                break;
             }
+            dp[i][v + items[i].1] = dp[i][v + items[i].1].min(dp[i - 1][v] + items[i].0);
         }
     }
-    let mut ans = 0;
-    for i in 0..=V as usize {
-        if dp[N][i] <= W as i64 {
-            ans = i;
+    for i in (0..=V).rev() {
+        if dp[N - 1][i] <= W {
+            println!("{}", i);
+            //println!("val:{}", dp[N - 1][i]);
+            return;
         }
     }
-    println!("{}", ans);
 }
-
 fn main() {
     solve();
 }

@@ -6,7 +6,7 @@ use num::*;
 use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
@@ -17,24 +17,25 @@ use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDequ
 use std::hash::Hash;
 #[allow(unused_imports)]
 use std::mem::swap;
+#[allow(unused_imports)]
+use std::ops::Bound::{Excluded, Included, Unbounded};
+
 #[allow(dead_code)]
 #[allow(non_snake_case)]
 fn to_char(x: i64) -> char {
     return std::char::from_digit(x as u32, 10).unwrap();
 }
+
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n:usize,socks:[i64;n]
+        n:usize,a:[usize;n]
     }
-    let mut cnt: HashMap<i64, i64> = HashMap::new();
-    for c in socks {
-        *cnt.entry(c).or_insert(0) += 1;
+    let mut cnt = HashMap::new();
+    for i in 0..n {
+        *cnt.entry(a[i]).or_insert(0) += 1;
     }
-    let mut ans = 0;
-    for (_c, num) in cnt {
-        ans += num / 2;
-    }
+    let ans = cnt.iter().map(|(k, v)| v / 2).sum::<usize>();
     println!("{}", ans);
 }
 fn main() {

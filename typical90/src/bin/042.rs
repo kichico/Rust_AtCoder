@@ -1,21 +1,20 @@
-use itertools::iproduct;
 #[allow(unused_imports)]
-use itertools::Itertools;
+use std::hash::Hash;
+#[allow(unused_imports)]
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
-#[allow(unused_imports)]
-use std::hash::Hash;
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque, BinaryHeap};
 #[allow(unused_imports)]
 use std::mem::swap;
 #[allow(dead_code)]
@@ -26,18 +25,8 @@ fn to_char(x: i64) -> char {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        K:usize
+        n:usize
     }
-    let mut dp = vec![vec![vec![0; 10]; 2]; K + 1];
-    dp[0][0][0] = 1;
-    for i in 0..K {
-        for j in 0..10 {
-            for k in 0..10 {
-                dp[i + 1][1][(j + k) % 10] += dp[i][1][j];
-            }
-        }
-    }
-    for (i, j, k) in iproduct!(0..K, 0..10, 0..10) {}
 }
 fn main() {
     solve();

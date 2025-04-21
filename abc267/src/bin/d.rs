@@ -1,20 +1,20 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
 #[allow(unused_imports)]
-use petgraph::*;
-#[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::hash::Hash;
 #[allow(unused_imports)]
 use std::mem::swap;
 #[allow(dead_code)]
@@ -27,25 +27,18 @@ fn solve() {
     input! {
         n:usize,m:usize,a:[i64;n]
     }
-    let mut dp = vec![vec![-1e18 as i64; m]; n];
-    dp[0][0] = a[0];
+    let LOW = -1e18 as i64;
+    let mut dp = vec![vec![LOW as i64; m + 1]; n];
+    dp[0][1] = a[0];
     for i in 1..n {
-        for j in 0..m {
-            if j == 0 {
-                dp[i][j] = a[i];
-            } else {
-                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - 1] + (j as i64 + 1) * a[i]);
-            }
+        dp[i][1] = a[i];
+        for j in 1..(i + 2).min(m + 1) {
+            dp[i][j] = dp[i][j].max(dp[i - 1][j]);
+            dp[i][j] = dp[i][j].max(dp[i - 1][j - 1] + a[i] * j as i64);
         }
     }
-    for i in 0..n {
-        println!("{}", dp[i].iter().join(" "));
-    }
-    let mut ans = -1e18 as i64;
-    for i in 0..m {
-        ans = max(ans, dp[n - 1][i]);
-    }
-    println!("{}", ans);
+
+    println!("{}", dp[n - 1][m]);
 }
 fn main() {
     solve();

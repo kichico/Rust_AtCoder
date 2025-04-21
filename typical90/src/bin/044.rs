@@ -1,21 +1,20 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use std::hash::Hash;
+#[allow(unused_imports)]
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
-#[allow(unused_imports)]
-use std::hash::Hash;
-use std::iter::FromIterator;
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque, BinaryHeap};
 #[allow(unused_imports)]
 use std::mem::swap;
 #[allow(dead_code)]
@@ -26,24 +25,7 @@ fn to_char(x: i64) -> char {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n:usize,q:usize,a:[i64;n],query:[(i32,usize,usize);q]
-    }
-    let mut deq: VecDeque<i64> = VecDeque::from_iter(a.into_iter());
-    for (t, x, y) in query {
-        if t == 1 {
-            let x = x - 1;
-            let y = y - 1;
-            let xv = deq[x].clone();
-            let yv = deq[y].clone();
-            deq[y] = xv;
-            deq[x] = yv;
-        } else if t == 2 {
-            let front = deq.pop_back().unwrap();
-            deq.push_front(front);
-        } else {
-            let x = x - 1;
-            println!("{}", deq[x]);
-        }
+        n:usize
     }
 }
 fn main() {

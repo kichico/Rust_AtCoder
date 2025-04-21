@@ -1,0 +1,970 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-a'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-a",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-a'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-a",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-b'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-b",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-b'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-b",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-c'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-c",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-c'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-c",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-d'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-d",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-d'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-d",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-e'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-e",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-e'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-e",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-f'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-f",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-f'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-f",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-g'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-g",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-g'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-g",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-h'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-h",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-h",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-h'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-h",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-h",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-i'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-i",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-i",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-i'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-i",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-i",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-j'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-j",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-j",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-j'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-j",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-j",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-k'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-k",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-k",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-k'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-k",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-k",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-l'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-l",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-l",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-l'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-l",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-l",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-m'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-m",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-m",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-m'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-m",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-m",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-n'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-n",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-n",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-n'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-n",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-n",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-o'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-o",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-o",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-o'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-o",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-o",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-p'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-p",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-p",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-p'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-p",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-p",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-q'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-q",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-q",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-q'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-q",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-q",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-r'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-r",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-r",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-r'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-r",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-r",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-s'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-s",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-s",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-s'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-s",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-s",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-t'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-t",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-t",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-t'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-t",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-t",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-u'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-u",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-u",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-u'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-u",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-u",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-v'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-v",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-v",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-v'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-v",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-v",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-w'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-w",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-w",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-w'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-w",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-w",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-x'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-x",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-x",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-x'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-x",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-x",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-y'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-y",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-y",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-y'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-y",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-y",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dp-z'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dp-z",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-z",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dp-z'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dp-z",
+                    "--package=dp"
+                ],
+                "filter": {
+                    "name": "dp-z",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

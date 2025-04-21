@@ -1,0 +1,230 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc176-a'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc176-a",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc176-a'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc176-a",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc176-b'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc176-b",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc176-b'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc176-b",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc176-c'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc176-c",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc176-c'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc176-c",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc176-d'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc176-d",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc176-d'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc176-d",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc176-e'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc176-e",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc176-e'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc176-e",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'arc176-f'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=arc176-f",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'arc176-f'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=arc176-f",
+                    "--package=arc176"
+                ],
+                "filter": {
+                    "name": "arc176-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

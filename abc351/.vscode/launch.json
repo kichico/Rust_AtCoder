@@ -1,0 +1,267 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc351-a'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc351-a",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc351-a'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc351-a",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-a",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc351-b'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc351-b",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc351-b'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc351-b",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-b",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc351-c'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc351-c",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc351-c'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc351-c",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-c",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc351-d'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc351-d",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc351-d'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc351-d",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-d",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc351-e'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc351-e",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc351-e'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc351-e",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-e",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc351-f'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc351-f",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc351-f'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc351-f",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-f",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'abc351-g'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=abc351-g",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'abc351-g'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=abc351-g",
+                    "--package=abc351"
+                ],
+                "filter": {
+                    "name": "abc351-g",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

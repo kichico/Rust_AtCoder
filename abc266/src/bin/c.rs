@@ -1,13 +1,12 @@
-use itertools::enumerate;
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
@@ -26,18 +25,43 @@ fn to_char(x: i64) -> char {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        coord:[(i64,i64);4]
+        point:[(i64,i64);4]
     }
-    let neighbor = vec![(3, 1), (0, 2), (1, 3), (2, 0)];
-    for (i, (u, v)) in enumerate(neighbor) {
-        let va = (coord[u].0 - coord[i].0, coord[u].1 - coord[i].1);
-        let vb = (coord[v].0 - coord[i].0, coord[v].1 - coord[i].1);
-        if va.0 * vb.1 - vb.0 * va.1 > 0 {
-            println!("No");
+    let points = vec![point.clone(), point.clone(), point.clone()].concat();
+    let mut args = vec![0f64; 4];
+    for i in 0..4 {
+        let p = i + 4;
+        let a = points[p - 1];
+        let b = points[p];
+        let c = points[p + 1];
+        let va = (a.0 - b.0, a.1 - b.1);
+        let vb = (c.0 - b.0, c.1 - b.1);
+        let cos_theta = (va.0 * vb.0 + va.1 * vb.1) as f64
+            / (((va.0.pow(2) + va.1.pow(2)) as f64).sqrt()
+                * ((vb.0.pow(2) + vb.1.pow(2)) as f64).sqrt());
+        let theta = cos_theta.acos();
+        args[i] = theta * 180f64 / std::f64::consts::PI;
+    }
+    for i in 0..1 << 4 {
+        let mut current = vec![0f64; 4];
+        for j in 0..4 {
+            if (i >> j) & 1 == 1 {
+                current[j] = args[j];
+            } else {
+                current[j] = 360f64 - args[j];
+            }
+        }
+        if (360f64 - current.iter().sum::<f64>()).abs() < 1e-5 {
+            for j in 0..4 {
+                if current[j] - 180f64 + 1e-6 > 0f64 {
+                    println!("No");
+                    return;
+                }
+            }
+            println!("Yes");
             return;
         }
     }
-    println!("Yes");
 }
 fn main() {
     solve();

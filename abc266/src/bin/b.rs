@@ -1,12 +1,12 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
@@ -27,9 +27,7 @@ fn solve() {
     input! {
         n:i64
     }
-    let MOD = 998244353;
-    let ans = if n % MOD < 0 { n % MOD + MOD } else { n % MOD };
-    println!("{}", ans);
+    println!("{}", n.rem_euclid(998244353));
 }
 fn main() {
     solve();

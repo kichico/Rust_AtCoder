@@ -1,6 +1,7 @@
 use core::ops::Bound::*;
 #[allow(unused_imports)]
 use itertools::*;
+use itertools_num::ItertoolsNum;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
@@ -89,32 +90,25 @@ fn solve() {
     input! {
         n:usize,a:[usize;n],q:usize,query:[(usize,usize);q]
     }
-    let mut sleep_wake: RangeSet = RangeSet::new();
     let mut cumsum = vec![0; n];
     for i in 1..n {
         cumsum[i] = cumsum[i - 1];
-        if i % 2 == 0 && i != 0 {
-            cumsum[i] += a[i] - a[i - 1];
-        }
-        if i < n - 1 && i % 2 == 1 {
-            sleep_wake.insert(a[i], a[i + 1]);
+        if i % 2 == 0 {
+            cumsum[i] = cumsum[i - 1] + (a[i] - a[i - 1]);
         }
     }
     let mut ans = vec![0; q];
     for (i, (from, to)) in enumerate(query) {
-        let left = a.lower_bound(&from);
-        let right = a.lower_bound(&to);
-        ans[i] += cumsum[right] - cumsum[left];
-        println!("l:{} r:{}", left, right);
-        println!("{} {}", cumsum[left], cumsum[right]);
-        if let Some(p) = sleep_wake.find(&from) {
-            if p.0 <= from && from < p.1 {
-                ans[i] -= from - p.0;
-            }
+        let from_idx = a.upper_bound(&from) - 1;
+        let to_idx = a.lower_bound(&to);
+        let mut time = cumsum[to_idx] - cumsum[from_idx];
+        if from_idx % 2 == 1 && from_idx > 0 {
+            time -= from - a[from_idx];
         }
-        if let Some(p) = sleep_wake.find(&to) {
-            ans[i] += p.1 - to;
+        if to_idx % 2 == 0 && to_idx > 0 {
+            time -= a[to_idx] - to;
         }
+        ans[i] = time;
     }
     println!("{}", ans.iter().join("\n"));
 }

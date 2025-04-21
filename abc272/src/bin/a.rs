@@ -1,22 +1,25 @@
 #[allow(unused_imports)]
-use itertools::Itertools;
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
 #[allow(unused_imports)]
-use petgraph::*;
-#[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque};
+use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
+#[allow(unused_imports)]
+use std::hash::Hash;
 #[allow(unused_imports)]
 use std::mem::swap;
+#[allow(unused_imports)]
+use std::ops::Bound::{Excluded, Included, Unbounded};
+
 #[allow(dead_code)]
 #[allow(non_snake_case)]
 fn to_char(x: i64) -> char {
@@ -26,11 +29,9 @@ fn to_char(x: i64) -> char {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n:usize,a:[i64;n]
+        n:usize
     }
-    println!("{}", a.iter().sum::<i64>());
 }
-
 fn main() {
     solve();
 }

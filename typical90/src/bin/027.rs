@@ -1,21 +1,20 @@
-use itertools::enumerate;
 #[allow(unused_imports)]
-use itertools::Itertools;
+use std::hash::Hash;
+#[allow(unused_imports)]
+use itertools::*;
 #[allow(unused_imports)]
 use num::*;
 #[allow(unused_imports)]
 use num_integer::*;
 #[allow(unused_imports)]
 use proconio::{
-    fastout, input,
+    input,
     marker::{Chars, Usize1},
 };
 #[allow(unused_imports)]
 use std::cmp::*;
 #[allow(unused_imports)]
-use std::collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque};
-#[allow(unused_imports)]
-use std::hash::Hash;
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, VecDeque, BinaryHeap};
 #[allow(unused_imports)]
 use std::mem::swap;
 #[allow(dead_code)]
@@ -26,14 +25,7 @@ fn to_char(x: i64) -> char {
 #[allow(non_snake_case)]
 fn solve() {
     input! {
-        n:usize,s:[String;n]
-    }
-    let mut dic: HashSet<String> = HashSet::new();
-    for (i, name) in enumerate(s) {
-        if !dic.contains(&name) {
-            println!("{}", i + 1);
-            dic.insert(name);
-        }
+        n:usize
     }
 }
 fn main() {

@@ -1,0 +1,8 @@
+5完したいといったがまさか6完まで行くとは...
+A:a.iter().filter().sum()
+B:文字列に変換して1文字ずつsetに入れて判定
+C:a.lower_bound(&r)-a.lower_bound(&l)
+D:別のvectorにpushしていって3以上の時末尾が"ABC"ならpop
+E:MSTなので辺はn-1、28C7は全然間に合うので全部試す
+　連結かどうかだけチェック
+F:X_aiとX_biの差だけdであればよい->Weighted UF
